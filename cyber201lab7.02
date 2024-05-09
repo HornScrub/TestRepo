@@ -1,0 +1,70 @@
+# OS Upgrade
+# Overview
+- Some basics you’ll need to succeed in supporting Windows-based systems include handing different versions of the OS and preserving user files while upgrading to a different OS.
+
+# Resources
+- Be sure to have a Windows 10 ISO file ready for the upgrade to Windows 10. You might have one ready from previous labs. If you don't, download Windows Media Creation tool here and create an ISO file:
+- https://www.microsoft.com/en-us/software-download/windows10
+- Review what an .iso file is. What does it mimic?
+
+# Scenario
+- Larry Moseman: “Hello tech team, I’ve been putting off the upgrade to Windows 10 for months but now I need it to run some specialized software. I need to keep my existing user profile data though. I’ll be gone all day so it’s yours to tinker with!”
+
+# Systems Credentials
+- Admin: admin / solarwinds123
+- User(local): shipping / vegetarian123
+- If you see any Windows activation prompts, click “Ask me later” and “OK” to bypass them.
+
+# Objectives
+- Upgrade Larry's Windows 7 PC to Windows 10 while preserving his user files.
+
+# Part 1: Staging
+- Download and import ops201-class07.ova. into VirtualBox
+
+# Part 2: Create a new Partition and Backup Larry's Files
+- We need to move Larry to Windows 10. With a valid license, Windows often offers free upgrades to successive operating systems. It is also possible to mount an ISO file within newer Windows operating system to update to different OSs without having to run a optical disc or use a USB.
+- However, due to licensing constraints in this instance and the outdated nature of Larry's PC, we can’t directly perform an in-place upgrade.
+- Another hurdle updating the new OS: Once we begin to install Windows 10, we will have to reformat our hard drive to complete this installation. This reformatting, however, will erase all the data on that drive.
+- One possible way of preserving Larry's files for the upgrade is creating a disk partition that can keep Larry's files safe while we install the new operating system.
+
+- Boot into the Windows 7 VM. Windows might prompt you to update passwords or that your license is no longer valid.
+- Navigate to Windows Explorer. What and how many drives do you see under "Computer"?
+- Navigate to Disk Management. What and how many volumes do you see displayed? What is their capacity, free space, their file system?
+- What is NTFS?
+- Shrink the existing C: partition. Observe the total size before the shrink. Enter the maximum amount of avaiable shrink space.
+- What happened to the free space in your C: partition?
+- Create a spare partition. Assign it a drive letter. If we are storing files here, should we format it? With what file system?
+- Label the new volume something that makes sense for its purpose, and keep the other settings as default.
+- Review the settings of the new volume before completing the setup process.
+- What happened to the unallocated space? Do you see any new volumes? What is its capacity, free space, and file system?
+- Windows 10 recommends about 20GB of free space to complete an installation. Do any of the volumes have that much free space?
+- How would we copy Larry’s entire user folder to the spare partition we created?
+- Verify that you can access Larry's files both in the original C: drive and the new drive you created before powering off the machine. You must be 100% sure his files are present on both drives before we continue.
+
+# Part 3: Configure Larry's PC in VirtualBox
+- If we were installing a new operating for Larry in-house, we could use a optical disc, a formatted USB, or even the network to mount the installation software.
+- However, since Larry's computer is a virtual machine, we will use VirtualBox to mimic that physical installation.
+- In VirtualBox, navigate to the ops201-class07 machine's settings.
+- Under the "System" tab, observe the boot order. What options do you see listed, and what does this mean?
+- Under the "Storage" tab, observe the storage devices. What do you see listed? What is a .vdi file? What does it mimic?
+- Click on the listed SATA controller. We need to attach our Windows10 ISO file. Add an optical drive and select the Windows10 ISO file.
+- If you don't see your ISO file present in the Optical Disk Selector, navigate to the "Medium Selector" and add a new virtual optical disk file (the option icon might look like a circular disc as opposed to a square hard drive).
+- Before moving on, take a look again at your storage devices, and the controller with its attachments. What did we just do? What is the physical equivalent of what we just did?
+- Take a look again at the boot order. If we want our VM to look for our Windows10 ISO file before the Windows7 VDI, what should the boot order look like?
+
+# Part 3: Install Windows 10
+- If you configured the boot order correctly, and you attached the ISO image correctly, Larry's PC will ask for a time sensitive prompt to boot from a CD/DVD.
+- We can also press F12 during the VirtualBox bootup sequence to mimic entering the BIOS, and select our bootable medium from there.
+- If Windows Setup appears, we successfully booted from the ISO image.
+- Navigate through the setup and installation (we don't have a product key, install Windows Home).
+- The setup will ask where we want to install Windows10. We need at least 20GB of space to complete the installation. When deciding which partition to format for the installation, we need to make sure we don't overwrite Larry's data we saved (good thing we named our new partition!).
+- Once you decided what partition we are using for the installation, click "Format". Double check we are formatting the correct partition. If we get it wrong, we could set ourselves back to Part 2, or worse, erase all of Larry's data with no backups.
+- Install on the newly formatted partition and wait for the install. Copy our admin username and password for the first user we create.
+- Once we are in the new Windows10 machine, we should create Larry a new user with his old username and password.
+- Under File Explorer, see if Larry's data is in the drive we created. Copy his data back in to the main drive under his new User folder and make sure you can access it under the C: partition.
+- We don't need that backup partition anymore. Once we are confident we copied Larry's data from the backup partition back to the C: drive, we should delete it and expand our C: drive to take up the total amount of remaining disk space.
+- Compare the C: drives free space to the free space of C: back in Part 2. What changed?
+- Verify system functionality by restarting the computer and logging in as Larry, and that you can access Larry's data from his account.
+
+# Wrapup
+- Delete ops201-class07 VM and .ova file.
