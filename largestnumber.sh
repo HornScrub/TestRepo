@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 numbers=(3 8 15 100)
 
 largest=${numbers[0]}
