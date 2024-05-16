@@ -1,0 +1,2 @@
+Pet Dog False
+go to the store False
