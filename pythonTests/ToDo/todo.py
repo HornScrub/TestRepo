@@ -116,14 +116,11 @@ def load_tasks(aFileName: str):
 
 def main():
     # Print the welcome message
-    print("Welcome to your To-Do list!\n\n")
+    print("\nWelcome to your To-Do list!\n\n")
 
     # Load the task file, or create a new empty one if it doesn't exist
     toDoFile = "ToDoList.txt"
     toDoList = load_tasks(toDoFile)
-
-    print(toDoList)
-
 
     # Prompt the user to enter a command
     command = '0'
