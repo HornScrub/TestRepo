@@ -13,9 +13,10 @@ import os
 # Time is used to control the speed of the game. It is used to slow down the displayed output of the terminal.
 import time
 
-DAMAGE_DICT = {"1d4" : [1, 2, 3 , 4],
+DAMAGE_DICT = {"1d4" : [1, 2, 3, 4],
                "1d6" : [1, 2, 3, 4, 5, 6],
                "1d8" : [1, 2, 3, 4, 5, 6, 7, 8],
+
                "1d10" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
 
 ## Sets the clear string command based if it is running on Windows or Linux
@@ -25,6 +26,10 @@ else:
     clear_string = 'clear'
 
 ## FUNCTIONS ##
+
+               "1d10" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+               "1d12" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+
 ## CLASSES ##
 
 
@@ -224,7 +229,7 @@ class Room:
         aRoom.light_level = aRoom.room_light_dict[room1.name]
         aRoom.list_of_items = [random.choice(list(aRoom.item_desc_dict.keys()))]
         aRoom.item_desc_dict.pop(room1.list_of_items[0])
-        aRoom.enemy = Room.enemy_1a
+        aRoom.enemy = random.choice(Room.enemy_1_list)
         ## aRoom.enemy = random.choice(Room.enemy_1_list)
 
     def createRoom2(aRoom : 'Room'):
@@ -271,8 +276,11 @@ class Game:
         else:
             print(f"There seems to be no more monsters here. The path ahead is clear.\n")
         print("\n\n\n\n\n")
+    
     def userTurn(room : Room, user : User) -> None:
+
         os.system('clear_string')
+
         ''' The user will take their turn in the room. '''
         action = ""
         while action != "fight" or action != "move" or action != "examine" or action!= "search" or action!= "use" or action != "quit":
@@ -340,18 +348,21 @@ class Game:
                     print(f"\nYou miss {enemy.name}!")
                 time.sleep(2)
             elif action == "use item" and len(user.inventory) > 0:
-                user.displayInventory()
                 print("Which item do you want to use? ", end='', flush=True)
-                item_name = input()
-                found = False
+                i = 1
                 for item in user.inventory:
-                    if item_name.lower() == item.lower():
-                        found = True
-                        print(f"\nYou use {item}!")
-                        user.useItem(item)
-                    if not found:
-                        print(f"\nYou don't have that item!")
-                        break
+                    print(f"{i}. {item}", end=', ', flush=True)
+                    i += 1
+                
+                while True:
+                    try:
+                        choice = int(input())
+                    except:
+                        print("Enter a valid number!")
+                    break
+                
+                print(f"\nYou use {user.inventory[choice - 1]}!")
+                user.useItem(user.inventory[choice - 1])
                 time.sleep(1)
 
             elif action == "flee":
@@ -364,7 +375,7 @@ class Game:
                 time.sleep(3)
                 break
             else:
-                print(f"\n{enemy.name} attacks!")
+                print(f"\n{random.choice(enemy.damageDescriptions)}")
                 time.sleep(2)
                 chance_to_hit = 100 - user.dodge_chance
                 if random.randint(1, 100) <= chance_to_hit:
@@ -395,7 +406,12 @@ class Game:
         time.sleep(1)
 
         input("Press anything to continue...")
+
         os.system('clear_string')
+
+
+        Game.showRoom(room)
+
 
     def search(room : Room, user : User) -> None:
         ''' The user will search the current room for items. '''
@@ -416,11 +432,31 @@ class Game:
             print("You find nothing...")
         
         input("\nPress anything to continue...")
+
         os.system('clear_string')
+        
+        Game.showRoom(room)
+
 
     def use(room : Room, user : User):
         ''' The user will use an item in their inventory. '''
-        user.useItem(input("\nWhich item do you want to use? ").lower())
+
+        
+        os.system('cls')
+        user.displayStats()
+        print("Which item do you want to use?")
+        i = 1
+        for item in user.inventory:
+            print(f"{i}. {item}")
+        
+        while True:
+            try:
+                choice = int(input("\nEnter the number of the item: "))
+            except ValueError: 
+                print("Invalid input. Please enter a number.")
+            break
+
+        user.useItem(user.inventory[choice - 1])
 
     def quit():
         ''' The game will end. '''
@@ -512,10 +548,10 @@ if __name__ == "__main__":
         print(f"You have chosen the Mage class!")
         user.name = name
         user.player_class = "Mage"
-        user.health = 12
-        user.max_health = 12
+        user.health = 15
+        user.max_health = 15
         user.defense = 1
-        user.attack_dice = "1d8"
+        user.attack_dice = "1d12"
         user.dodge_chance = 10
         user.strength = 5
         user.dexterity = 10
@@ -548,14 +584,10 @@ if __name__ == "__main__":
     input()
     os.system('clear_string')
 
-    room1 = Room("Entryway")
     fakeLoad()
 
-    print(f"{user.name} the {user.player_class} approaches the entrance of the dungeon. A dark and foreboding energy fills the air as the maw of the ornate but sinister doors beckon our intrepid adventurer forward.")
-
-    time.sleep(2)
     print("The doors creak open, revealing...", flush = True)
-    time.sleep(2)
+    time.sleep(4)
 
     room1 = Room()
     room2 = Room()
