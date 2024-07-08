@@ -16,8 +16,20 @@ import time
 DAMAGE_DICT = {"1d4" : [1, 2, 3, 4],
                "1d6" : [1, 2, 3, 4, 5, 6],
                "1d8" : [1, 2, 3, 4, 5, 6, 7, 8],
+
+               "1d10" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+
+## Sets the clear string command based if it is running on Windows or Linux
+if os.name == 'nt':
+    clear_string = 'cls'
+else:
+    clear_string = 'clear'
+
+## FUNCTIONS ##
+
                "1d10" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                "1d12" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+
 ## CLASSES ##
 
 
@@ -256,7 +268,7 @@ class Game:
 # The class is responsible for taking in Room, User, and Enemy objects and handling user input.
     def showRoom(room : Room) -> None:
         ''' Prints the description of the room. '''
-        os.system('cls')
+        os.system('clear_string')
         print("ROOM: " + room.name + '\n')
         print(room.description)
         if room.enemy:
@@ -266,6 +278,9 @@ class Game:
         print("\n\n\n\n\n")
     
     def userTurn(room : Room, user : User) -> None:
+
+        os.system('clear_string')
+
         ''' The user will take their turn in the room. '''
         action = ""
         while action != "fight" or action != "move" or action != "examine" or action!= "search" or action!= "use" or action != "quit":
@@ -304,7 +319,7 @@ class Game:
         
     def fight(room : Room, user : User) -> None:
         ''' The user will engage in a fight with the enemy. '''
-        os.system('cls')
+        os.system('clear_string')
         time.sleep(1)
         enemy = room.enemy
         print(f"You engage in a battle with {enemy.name}!")
@@ -391,8 +406,12 @@ class Game:
         time.sleep(1)
 
         input("Press anything to continue...")
-        os.system('cls')
+
+        os.system('clear_string')
+
+
         Game.showRoom(room)
+
 
     def search(room : Room, user : User) -> None:
         ''' The user will search the current room for items. '''
@@ -413,8 +432,11 @@ class Game:
             print("You find nothing...")
         
         input("\nPress anything to continue...")
-        os.system('cls')
+
+        os.system('clear_string')
+        
         Game.showRoom(room)
+
 
     def use(room : Room, user : User):
         ''' The user will use an item in their inventory. '''
@@ -469,7 +491,7 @@ def fakeLoad():
             print(".", end='', flush=True)
             time.sleep(0.5)
             k += 1
-        os.system('cls')
+        os.system('clear_string')
         k = 1
 
 
@@ -483,11 +505,11 @@ if __name__ == "__main__":
     input()
     print(f"Let's get started!")
     time.sleep(2)
-    os.system('cls')
+    os.system('clear_string')
     name = input("Enter your character's name: ")
     print(f"Welcome, {name}!")
     time.sleep(2)
-    os.system('cls')
+    os.system('clear_string')
     print(f"You are about to embark on an epic quest! Perils await you!")
     time.sleep(2)
 
@@ -501,9 +523,9 @@ if __name__ == "__main__":
         except ValueError:
             print("Please enter a valid number (1, 2, or 3).", end='', flush=True)
             time.sleep(2)
-            os.system('cls')
+            os.system('clear_string')
     
-    os.system('cls')
+    os.system('clear_string')
     if classChoice == 1:
         print(f"You have chosen the Warrior class!")
 
@@ -560,7 +582,7 @@ if __name__ == "__main__":
 
     print(f"Your character has been created! The dungeon awaits. Press enter to proceed...")
     input()
-    os.system('cls')
+    os.system('clear_string')
 
     fakeLoad()
 
@@ -586,7 +608,7 @@ if __name__ == "__main__":
     Game.showRoom(room3)
     Game.userTurn(room3, user)
 
-    os.system('cls')
+    os.system('clear_string')
     print("You have successfully defeated the final boss!", flush = True)
     time.sleep(2)
     print(f"{user.name} the {user.player_class}, you have earned legendary renown and the title of Hero!", flush = True)
