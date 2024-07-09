@@ -26,6 +26,8 @@ DAMAGE_DICT = {"1d4" : [1, 2, 3, 4],
                "1d10" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                "1d12" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
 
+
+
 ## CLASSES ##
 
      # User #
@@ -106,7 +108,6 @@ class User:
 
         time.sleep(2)
         
-
 ## Enemy ##
 class Enemy:
 # The Enemy class represents an enemy in the dungeon.
@@ -450,8 +451,6 @@ class Game:
             print("Goodbye!", end='', flush=True)
             time.sleep(2)
             exit()
-
-    
 
 ## MAIN ##
 
