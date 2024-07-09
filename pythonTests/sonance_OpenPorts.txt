@@ -1,0 +1,566 @@
+Subdomain: SCVSPSAP-D010.corp.sonance.com
+
+Subdomain: SCVSPSAP-P030.corp.sonance.com
+
+Subdomain: adfs.sonance.com
+	Host(s): 209.79.16.19
+		Ports: 
+
+Subdomain: autodiscover.sonance.com
+	Host(s): 52.96.57.24
+		Ports: 80
+
+Subdomain: autodiscover.sonance.com:70.32.90.70
+
+Subdomain: autodiscover.sonance.com:autod.ms-acdc-autod.office.com
+
+Subdomain: autodiscover.sonance.com:autodiscover.outlook.com
+
+Subdomain: autodiscover.sonance.com:autodiscover.outlook.com.
+
+Subdomain: autodiscover.sonance.com:webmail.sonance.com
+
+Subdomain: barney.corp.sonance.com
+
+Subdomain: beamapi.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: cc.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: cc.sonance.com:172.67.156.233
+
+Subdomain: cc.sonance.com:188.114.98.233
+
+Subdomain: cc.sonance.com:188.114.99.233
+
+Subdomain: cc.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: cc.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: cc.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: cc.sonance.com:70.32.90.70
+
+Subdomain: cisco-asa-01.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: cisco-asa-01.sonance.com:104.21.8.71
+
+Subdomain: cisco-asa-01.sonance.com:104.22.34.66
+
+Subdomain: cisco-asa-01.sonance.com:104.22.35.66
+
+Subdomain: cisco-asa-01.sonance.com:172.67.40.190
+
+Subdomain: cisco-asa-01.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: cisco-asa-01.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: cisco-asa-01.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: cisco-asa-01.sonance.com:70.32.90.70
+
+Subdomain: com.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: com.sonance.com:104.22.34.66
+
+Subdomain: com.sonance.com:104.22.35.66
+
+Subdomain: com.sonance.com:172.67.40.190
+
+Subdomain: com.sonance.com:188.114.98.229
+
+Subdomain: com.sonance.com:188.114.99.229
+
+Subdomain: com.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: com.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: com.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: com.sonance.com:70.32.90.70
+
+Subdomain: corp.sonance.com
+
+Subdomain: corp.sonance.com:corp-sonance-com.mail.protection.outlook.com
+
+Subdomain: corp.sonance.com:mx1-us1.ppe-hosted.com
+
+Subdomain: corp.sonance.com:mx1-us1.ppe-hosted.com.
+
+Subdomain: corp.sonance.com:mx2-us1.ppe-hosted.com
+
+Subdomain: corp.sonance.com:mx2-us1.ppe-hosted.com.
+
+Subdomain: cvpn.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: cvpn.sonance.com:104.22.34.66
+
+Subdomain: cvpn.sonance.com:104.22.35.66
+
+Subdomain: cvpn.sonance.com:172.67.156.233
+
+Subdomain: cvpn.sonance.com:172.67.40.190
+
+Subdomain: cvpn.sonance.com:209.79.16.3
+
+Subdomain: cvpn.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: cvpn.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: cvpn.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: danaimages.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: danaimages.sonance.com.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: danaimages.sonance.com.sonance.com:104.21.8.71
+
+Subdomain: danaimages.sonance.com.sonance.com:104.22.34.66
+
+Subdomain: danaimages.sonance.com.sonance.com:104.22.35.66
+
+Subdomain: danaimages.sonance.com.sonance.com:172.67.40.190
+
+Subdomain: danaimages.sonance.com.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: danaimages.sonance.com.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: danaimages.sonance.com.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: danaimages.sonance.com.sonance.com:70.32.90.70
+
+Subdomain: danaimages.sonance.com:104.22.34.66
+
+Subdomain: danaimages.sonance.com:104.22.35.66
+
+Subdomain: danaimages.sonance.com:172.67.40.190
+
+Subdomain: danaimages.sonance.com:188.114.98.224
+
+Subdomain: danaimages.sonance.com:188.114.99.224
+
+Subdomain: danaimages.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: danaimages.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: danaimages.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: danaimages.sonance.com:70.32.90.70
+
+Subdomain: education.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: education.sonance.com:104.21.8.71
+
+Subdomain: education.sonance.com:104.22.34.66
+
+Subdomain: education.sonance.com:104.22.35.66
+
+Subdomain: education.sonance.com:172.67.40.190
+
+Subdomain: education.sonance.com:188.114.98.225
+
+Subdomain: education.sonance.com:188.114.99.225
+
+Subdomain: education.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: education.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: education.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: education.sonance.com:70.32.90.70
+
+Subdomain: ftp.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: ftp.sonance.com:104.21.8.71
+
+Subdomain: ftp.sonance.com:104.22.34.66
+
+Subdomain: ftp.sonance.com:104.22.35.66
+
+Subdomain: ftp.sonance.com:172.67.40.190
+
+Subdomain: ftp.sonance.com:188.114.98.224
+
+Subdomain: ftp.sonance.com:188.114.99.224
+
+Subdomain: ftp.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: ftp.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: ftp.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: ftp.sonance.com:2a06:98c1:3122:e000::
+
+Subdomain: ftp.sonance.com:2a06:98c1:3123:e000::
+
+Subdomain: ftp.sonance.com:70.32.90.70
+
+Subdomain: ftp2.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: ftp2.sonance.com:104.21.8.71
+
+Subdomain: ftp2.sonance.com:104.22.34.66
+
+Subdomain: ftp2.sonance.com:104.22.35.66
+
+Subdomain: ftp2.sonance.com:172.67.40.190
+
+Subdomain: ftp2.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: ftp2.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: ftp2.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: ftp2.sonance.com:70.32.90.70
+
+Subdomain: gw-mn1.sonance.com
+	Host(s): 128.92.141.210
+		Ports: 80, 443
+
+Subdomain: gw-sc1.sonance.com
+	Host(s): 209.79.16.103
+		Ports: 80, 443
+
+Subdomain: gw-sc1.sonance.com:209.79.16.103
+
+Subdomain: gw-sc2.sonance.com
+	Host(s): 70.182.197.179
+		Ports: 80, 443
+
+Subdomain: homer.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: homer.sonance.com:104.21.8.71
+
+Subdomain: homer.sonance.com:104.22.34.66
+
+Subdomain: homer.sonance.com:104.22.35.66
+
+Subdomain: homer.sonance.com:172.67.40.190
+
+Subdomain: homer.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: homer.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: homer.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: homer.sonance.com:70.32.90.70
+
+Subdomain: intranet.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: intranet.sonance.com:104.22.34.66
+
+Subdomain: intranet.sonance.com:104.22.35.66
+
+Subdomain: intranet.sonance.com:172.67.156.233
+
+Subdomain: intranet.sonance.com:172.67.40.190
+
+Subdomain: intranet.sonance.com:209.79.16.210
+
+Subdomain: intranet.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: intranet.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: intranet.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: legacy.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: legacy.sonance.com:104.22.34.66
+
+Subdomain: legacy.sonance.com:104.22.35.66
+
+Subdomain: legacy.sonance.com:172.67.40.190
+
+Subdomain: legacy.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: legacy.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: legacy.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: legacy.sonance.com:70.32.90.70
+
+Subdomain: link.sonance.com
+	Host(s): 170.187.131.209
+		Ports: 25, 80, 443
+
+Subdomain: login.sonance.com
+	Host(s): 209.79.16.9
+		Ports: 
+
+Subdomain: login.sonance.com:209.79.16.9
+
+Subdomain: mail.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: mail.sonance.com:104.22.34.66
+
+Subdomain: mail.sonance.com:104.22.35.66
+
+Subdomain: mail.sonance.com:172.67.40.190
+
+Subdomain: mail.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: mail.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: mail.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: mail.sonance.com:70.32.90.70
+
+Subdomain: mail.sonance.com:webmail.sonance.com
+
+Subdomain: mail.sonance.com:webmail.sonance.com.
+
+Subdomain: markettrends.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: materials.sonance.com
+	Host(s): 54.144.161.188
+		Ports: 80, 443
+
+Subdomain: my.sonance.com
+	Host(s): 104.18.37.58
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: my.sonance.com:172.64.150.198
+
+Subdomain: mydashboard.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: mydashboard.sonance.com:104.22.34.66
+
+Subdomain: mydashboard.sonance.com:104.22.35.66
+
+Subdomain: mydashboard.sonance.com:13.57.56.181
+
+Subdomain: mydashboard.sonance.com:172.67.156.233
+
+Subdomain: mydashboard.sonance.com:172.67.40.190
+
+Subdomain: mydashboard.sonance.com:209.79.16.37
+
+Subdomain: mydashboard.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: mydashboard.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: mydashboard.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: ns.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: ns.sonance.com:104.21.8.71
+
+Subdomain: ns.sonance.com:104.22.34.66
+
+Subdomain: ns.sonance.com:104.22.35.66
+
+Subdomain: ns.sonance.com:172.67.40.190
+
+Subdomain: ns.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: ns.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: ns.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: ns.sonance.com:70.32.90.70
+
+Subdomain: pav.sonance.com
+	Host(s): 70.182.197.179
+		Ports: 80, 443
+
+Subdomain: pav.sonance.com:70.182.197.179
+
+Subdomain: pcf-dev.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: pcf.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: pcfapi-dev.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: pcfapi-dev.sonance.com:172.67.156.233
+
+Subdomain: pcfapi.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: portal.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: portal.sonance.com:104.21.8.71
+
+Subdomain: portal.sonance.com:104.22.34.66
+
+Subdomain: portal.sonance.com:104.22.35.66
+
+Subdomain: portal.sonance.com:172.67.40.190
+
+Subdomain: portal.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: portal.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: portal.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: portal.sonance.com:70.32.90.70
+
+Subdomain: rsvp.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: sbreturns.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: sbreturns.sonance.com:172.67.156.233
+
+Subdomain: scvspsap-d010.corp.sonance.com
+
+Subdomain: scvspsap-p010.corp.sonance.com
+
+Subdomain: scvspsap-p030.corp.sonance.com
+
+Subdomain: scvssvex-p001.corp.sonance.com
+
+Subdomain: scvssvex-p002.corp.sonance.com
+
+Subdomain: shippingdashboard.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: sonance.com.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: sonance.com.sonance.com:104.22.34.66
+
+Subdomain: sonance.com.sonance.com:104.22.35.66
+
+Subdomain: sonance.com.sonance.com:172.67.156.233
+
+Subdomain: sonance.com.sonance.com:172.67.40.190
+
+Subdomain: sonance.com.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: sonance.com.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: sonance.com.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: sonance.com.sonance.com:70.32.90.70
+
+Subdomain: spsdocs.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: vendor.sonance.com
+	Host(s): 209.79.16.106
+		Ports: 
+
+Subdomain: vendor.sonance.com:209.79.16.106
+
+Subdomain: vopay.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: vopayapi.sonance.com
+	Host(s): 172.67.40.190
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: webmail.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: webmail.sonance.com:104.22.34.66
+
+Subdomain: webmail.sonance.com:104.22.35.66
+
+Subdomain: webmail.sonance.com:172.67.156.233
+
+Subdomain: webmail.sonance.com:172.67.40.190
+
+Subdomain: webmail.sonance.com:188.114.98.224
+
+Subdomain: webmail.sonance.com:188.114.99.224
+
+Subdomain: webmail.sonance.com:209.79.16.33
+
+Subdomain: webmail.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: webmail.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: webmail.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: webmail2.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: webmail2.sonance.com:104.21.8.71
+
+Subdomain: webmail2.sonance.com:104.22.34.66
+
+Subdomain: webmail2.sonance.com:104.22.35.66
+
+Subdomain: webmail2.sonance.com:172.67.40.190
+
+Subdomain: webmail2.sonance.com:2606:4700:10::6816:2242
+
+Subdomain: webmail2.sonance.com:2606:4700:10::6816:2342
+
+Subdomain: webmail2.sonance.com:2606:4700:10::ac43:28be
+
+Subdomain: webmail2.sonance.com:70.32.90.70
+
+Subdomain: webpdm.sonance.com
+	Host(s): 209.79.16.38
+		Ports: 
+
+Subdomain: webtools.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: wiggum.sonance.com
+	Host(s): 104.22.34.66
+		Ports: 80, 443, 8080, 8443
+
+Subdomain: wiggum.sonance.com:172.67.156.233
+
+Subdomain: wsd.sonance.com
+	Host(s): 209.79.16.208
+		Ports: 
+
+Subdomain: wsp.sonance.com
+	Host(s): 104.22.35.66
+		Ports: 80, 443, 8080, 8443
+
