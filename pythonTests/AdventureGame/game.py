@@ -28,7 +28,6 @@ DAMAGE_DICT = {"1d4" : [1, 2, 3, 4],
 
 ## CLASSES ##
 
-
      # User #
     ## Enemy ##
   #### Room ####
